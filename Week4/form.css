@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgb(129, 226, 129), skyblue);
+}
+
+.container {
+  width: 25%;
+  padding: 1rem;
+  border: 1px solid white;
+  background-color: whitesmoke;
+  border-radius: 5%;
+  margin: auto;
+  margin-top: 5rem;
+  box-shadow: 10px 10px 15px rgb(91, 204, 241);
+  position: relative;
+}
+
+.login {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(32, 182, 32);
+  text-shadow: 1px 3px 2px rgb(119, 141, 119);
+}
+
+.text {
+  text-align: center;
+}
+
+.form {
+  position: relative;
+}
+
+.form:hover {
+  border: 1px solid grey;
+}
+
+.firstname,
+.lastname,
+.mail,
+.phoneNum,
+.dateofBirth,
+.password,
+.pw1 {
+  width: 100%;
+  height: 7vh;
+  margin: 1rem;
+  max-width: 25rem;
+  border-radius: 60px;
+  display: flex;
+  /*  backdrop-filter: blur(4px) saturate(180%); */
+}
+
+.firstname button,
+.lastname button,
+.mail button,
+.dateofBirth button,
+.phoneNum button,
+.password button,
+.pw1 button {
+  font-size: 1rem;
+  background-color: rgb(32, 182, 32);
+  border-radius: 50%;
+  color: whitesmoke;
+  width: 2rem;
+  height: 1.7rem;
+  cursor: pointer;
+  position: relative;
+  left: 0.4rem;
+  top: 0.6rem;
+  border: 0;
+  outline: none;
+}
+
+.firstname button:hover,
+.lastname button:hover,
+.mail button:hover,
+.dateofBirth button:hover,
+.phoneNum button:hover,
+.password button:hover,
+.pw1 button:hover {
+  transform-style: preserve-3d;
+  animation: animate 1s linear 1;
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+.firstname input,
+.lastname input,
+.mail input,
+.dateofBirth input,
+.phoneNum input,
+.password input,
+.pw1 input {
+  border: 0;
+  outline: none;
+  flex: 1;
+  padding-left: 1rem;
+  background: transparent;
+}
+
+.pw {
+  backdrop-filter: blur(4px) saturate(180%);
+}
+
+.link1 {
+  text-align: right;
+}
+.link1 a:link {
+  text-decoration: none;
+  color: green;
+  font-size: 0.8rem;
+}
+
+.link1 a:visited {
+  color: rgb(21, 221, 21);
+}
+
+.link1 a:hover {
+  text-decoration: 1px solid rgb(7, 7, 59) underline;
+}
+
+.bbutton {
+  font-size: 1rem;
+  padding: 0.3rem 0.9rem;
+  background: linear-gradient(
+    to right,
+    rgb(32, 182, 32),
+    rgb(5, 84, 116),
+    rgb(32, 182, 32)
+  );
+  color: white;
+  box-shadow: 0 1px 5px rgb(99, 93, 93);
+  border-radius: 10%;
+  border: 0;
+  transition: ease-out 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.bbutton:hover {
+  color: rgb(32, 182, 32);
+  cursor: pointer;
+}
+
+.bbutton:before {
+  transition: 0.3s all ease;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background: white;
+}
+
+.bbutton:hover:before {
+  transition: 0.3s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+    width: min(100%, 350px);
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .container {
+    width: min(100%, 380px);
+  }
+}
