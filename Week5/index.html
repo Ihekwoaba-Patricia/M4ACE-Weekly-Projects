@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="store.css">
+
+
+</head>
+<body id="bgcolor">
+    <div id="container1">
+    
+    <p>
+       <em class="our">Our</em>  <em class="store">Store</em>
+    </p> 
+    <div class="menu" id="menulist">
+    <ul id="listOFItems" >
+        <li>ALL</li>
+        <li>CAKES</li>
+        <li>CUPCAKES</li>
+        <li>SWEETS</li>
+        <li>DOUGHNUTS</li>
+    </ul>
+</div>
+   <form action="https://www.goggle.com/search" method="get" id="searchbox">
+    <button type="submit">🔍</button>
+    <input type="text" name="storelist" placeholder="item...."/>
+</form>
+    <section class="parent" id="image">
+
+    <figure class="items">
+        <img src="Img/cakeItems.jpg" width="350" height="250" alt="Sweet Items">
+        <figcaption>Sweet Items <span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="Img/sweetItem1.jpg" width="350" height="250" alt="Cupcake Item">
+        <figcaption>Cupcake Item <span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="Img/cupCake1.jpg" width="350" height="250" alt="Coke Item">
+        <figcaption>Coke Item <span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="Img/cupCake2.jpg" width="350" height="250" alt="Doughnut Item">
+        <figcaption>Doughnut Item<span class="money"> $5 </span></figcaption>
+    </figure>
+
+    <figure class="items">
+        <img src="Img/sweetItem2.jpg" width="350" height="250" alt="Sweet Items">
+        <figcaption>Sweet Item <span class="money"> $5 </span></figcaption>
+    </figure>  
+    
+    <figure class="items">
+        <img src="Img/doughnut.jpg" width="350" height="250" alt="Cupcake Item">
+        <figcaption>Cupcake Item<span class="money"> $5 </span></figcaption>
+    </figure>
+    </section>
+</div>
+   
+    <div class="features">
+   <h2> Change the Background-color and Font-family </h3> 
+    <button type="button" name="btn" onclick="bg_color()" id="me"> Click me</button><br><br>
+
+    <h2> Click to reduce the opacity of the image</h3> 
+    <button type="button" onclick="reduce()"> Reduce</button>
+    </div> <br> <br>
+   
+
+  
+   
+    <script src="store.js"></script> 
+</body>
+</html>
