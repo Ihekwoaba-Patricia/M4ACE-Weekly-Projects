@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer sample</title>
+    <script
+      src="https://kit.fontawesome.com/f567a8bfa0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .footerContainer {
+        margin: 30rem 0 0 0;
+        background-color: rgb(43, 29, 126);
+        color: white;
+      }
+
+      .footer-div {
+        display: grid;
+        margin-top: 5rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+
+
+      .social-handles {
+        gap: 2rem;
+        margin-left: 2rem;
+      }
+
+      .social-handles > li > i {
+        border-radius: 60px;
+        padding: 1rem;
+      }
+
+      .facebook {
+        background-color: rgb(88, 88, 246);
+      }
+      .twitter {
+        background-color: skyblue;
+      }
+      .instagram {
+        background-color: rgb(230, 60, 60);
+      }
+      .linkedin {
+        background-color: blue;
+      }
+      .tiktok {
+        background-color: rgb(6, 171, 236);
+      }
+      .youtube {
+        background-color: red;
+      }
+
+      .underline div {
+        width: 40px;
+        height: 5px;
+        border-bottom: 3px solid white;
+        
+      }
+
+      li {
+        list-style-type: none;
+        margin: 1rem 0 0 0;
+      }
+
+      .contact-div > h3 {
+        margin-top: 1rem;
+      }
+
+      hr {
+        margin: 3rem 0 3rem 0;
+      }
+
+      .input-div > input {
+        display: block;
+        margin-top: 1rem;
+        width: 20rem;
+        padding: 1rem;
+        border-radius: 5px;
+      }
+
+      #email {
+        background-color: transparent;
+        border: 2px solid white;
+      }
+
+      #email::placeholder {
+        color: white;
+        font-weight: bolder;
+        font-size: 1.3rem;
+      }
+
+      #sub {
+        text-align: center;
+        font-size: 1.8rem;
+        color: black;
+        font-size: 1.8rem;
+      }
+
+      #sub::placeholder {
+        color: black;
+        font-weight: bolder;
+      }
+
+      .last-footer-div {
+        background-color: rgb(19, 19, 90);
+        border: 0;
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .footer-div {
+          display: grid;
+          justify-content: center;
+          gap: 2rem;
+          font-size: 1.7rem;
+        }
+
+        h1 {
+          margin: 0 0 3rem 4rem;
+        }
+
+        .social-handles {
+          display: grid;
+          grid-template-columns: 25% 25%;
+          justify-content: center;
+        }
+
+        .last-footer-div {
+          padding-top: 1rem;
+          margin-top: 2rem;
+          text-align: center;
+        }
+
+        .copyright-div,
+        .policy-div {
+          margin: 1rem 0 0 1rem;
+          margin-top: 2rem;
+          font-weight: bolder;
+          font-size: 1.2rem;
+        }
+
+        .copyright-div span1,
+        .policy-div span1 {
+          margin-left: 1rem;
+        }
+
+        .policy-div {
+          padding-bottom: 1rem;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .footer-div {
+          grid-template-columns: 25% 25%;
+          justify-content: center;
+          gap: 4rem;
+          margin: 0 3rem 2rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3rem 7rem;
+        }
+
+        .social-handles {
+          display: flex;
+          justify-content: center;
+        }
+
+        .last-footer-div {
+          padding-top: 1rem;
+          margin-top: 2rem;
+        }
+
+        .copyright-div,
+        .policy-div {
+          margin: 1rem 0 0 1rem;
+          margin-top: 2rem;
+          font-weight: bolder;
+          font-size: 1.2rem;
+        }
+
+        .last-footer-div {
+          padding-top: 1rem;
+          margin-top: 2rem;
+          text-align: center;
+        }
+
+        .copyright-div,
+        .policy-div {
+          margin: 1rem 0 0 1rem;
+          margin-top: 2rem;
+          font-weight: bolder;
+          font-size: 1.2rem;
+        }
+
+        .copyright-div span1,
+        .policy-div span1 {
+          margin-left: 1rem;
+        }
+
+        .policy-div {
+          padding-bottom: 1rem;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        .footer-div {
+          grid-template-columns: 23% 23% 23%;
+          justify-content: center;
+          gap: 2rem;
+          margin: 0 3rem 2rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3rem 5rem;
+        }
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        .footer-div {
+          grid-template-columns: 18% 18% 18% 18% 18%;
+          justify-content: center;
+          gap: 1rem;
+          margin: 0 3rem 2rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3rem 9rem;
+        }
+
+        .footer-header {
+          display: flex;
+        }
+
+        .footer-header ul {
+          flex: 1;
+          justify-content: flex-end;
+          margin-right: 5rem;
+        }
+
+        .last-footer-div {
+          display: flex;
+          margin-top: 3rem;
+        }
+
+         .policy-div {
+          flex: 1;
+          text-align: right;
+          margin-right: 2rem;
+
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <footer class="footerContainer">
+      <div class="footer-header">
+        <h1><i class="fa-brands fa-slack"></i> Logo</h1>
+
+        <ul class="social-handles">
+          <li><i class="fa-brands fa-facebook-f facebook"></i></li>
+          <li><i class="fa-brands fa-twitter twitter"></i></li>
+          <li><i class="fa-brands fa-instagram instagram"></i></li>
+          <li><i class="fa-brands fa-linkedin linkedin"></i></li>
+          <li><i class="fa-brands fa-tiktok tiktok"></i></li>
+          <li><i class="fa-brands fa-youtube youtube"></i></li>
+        </ul>
+      </div>
+      <hr />
+      <div class="footer-div">
+        <ul class="ul-class">
+          <div class="underline">
+            <h3 class="comp">Company</h3>
+            <div></div>
+          </div>
+          <li>Home</li>
+          <li>Contact us</li>
+          <li>About us</li>
+          <li>Get started</li>
+        </ul>
+
+        <ul>
+          <div class="underline">
+            <h3>Services</h3>
+            <div></div>
+          </div>
+          <li>App Design</li>
+          <li>Web design</li>
+          <li>Logo design</li>
+          <li>Banner design</li>
+        </ul>
+
+        <ul>
+          <div class="underline">
+            <h3>Account</h3>
+            <div></div>
+          </div>
+          <li>Profile</li>
+          <li>My account</li>
+          <li>Preference</li>
+          <li>Purchase</li>
+        </ul>
+
+        <ul>
+            <div class="underline">
+            <h3>Courses</h3>
+            <div></div>
+        </div>
+          <li>HTML & CSS</li>
+          <li>Javascript</li>
+          <li>Photography</li>
+          <li>Photoshop</li>
+        </ul>
+
+        <div class="sub-div">
+            <div class="underline">
+            <h3>Subscribe</h3>
+            <div></div>
+        </div>
+          <div class="input-div">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+            />
+            <input type="text" name="sub" id="sub" placeholder="Subcribe" />
+          </div>
+        </div>
+      </div>
+
+      <div class="last-footer-div">
+        <div class="copyright-div">
+          <span>Copyright <i class="fa-regular fa-copyright"></i> 2021 Logo</span>
+          <span class="span1">All rights reserved</span>
+        </div>
+        <div class="policy-div">
+          <span>Privacy policy</span>
+          <span class="span1">Terms & condition</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

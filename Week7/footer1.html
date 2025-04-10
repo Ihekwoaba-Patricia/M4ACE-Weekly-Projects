@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer sample</title>
+    <script
+      src="https://kit.fontawesome.com/f567a8bfa0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .footerContainer {
+        margin: 18rem 0 2rem 0;
+      }
+
+      .footer-div {
+        display: grid;
+        margin-top: 4rem;
+      }
+
+      h1 {
+        position: relative;
+      }
+
+      h1 > sup {
+        font-size: small;
+        position: absolute;
+      }
+
+      li {
+        list-style-type: none;
+        margin: 1rem 0 0 0;
+      }
+
+      .contact-div > h3, p, .contact-div address {
+        margin-top: 1rem;
+      }
+
+
+      hr {
+        margin-top: 3rem;
+      }
+
+      h5 {
+        margin-top: 2rem;
+        text-align: center;
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+        .footer-div {
+          margin: 0 0 0 5rem;
+          gap: 2rem;
+          font-size: 1.7rem;
+        }
+
+        h1 {
+          margin: 0 0 3rem 4rem;
+        }
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+        .footer-div {
+          grid-template-columns: 25% 25%;
+          justify-content: center;
+          gap: 4rem;
+          margin: 0 3rem 2rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3rem 7rem;
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        .footer-div {
+          grid-template-columns: 23% 23% 23%;
+          justify-content: center;
+          gap: 2rem;
+          margin: 0 3rem 2rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3rem 5rem;
+        }
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+        .footer-div {
+          grid-template-columns: 18% 18% 18% 18%;
+          justify-content: center;
+          gap: 1rem;
+          margin: 0 3rem 2rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3rem 9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="footerContainer">
+      <h1>ABCDEF <sup>TM</sup></h1>
+      <div class="footer-div">
+        <ul class="ul-class">
+          <h3>Services</h3>
+          <li>App Development</li>
+          <li>Web development</li>
+          <li>DevOps</li>
+          <li>Web Designing</li>
+          <li>Tutorials</li>
+          <li>Register</li>
+          <li>News</li>
+        </ul>
+
+        <ul>
+          <h3>Social</h3>
+          <li><i class="fa-brands fa-linkedin"></i> Linkedin</li>
+          <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+          <li><i class="fa-brands fa-github"></i> Github</li>
+          <li><i class="fa-brands fa-codepen"></i> Codepen</li>
+          <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+          <li><i class="fa-brands fa-facebook"></i> Facebook</li>
+          <li><i class="fa-brands fa-tiktok"></i> Tiktok</li>
+          <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+        </ul>
+
+        <ul>
+          <h3>Quick links</h3>
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>About</li>
+          <li><a href="#"></a>Blogs</li>
+          <li><a href="#"></a>Contact</li>
+          <li><a href="#"></a>Services</li>
+        </ul>
+
+        <div class="contact-div">
+          <h3>Address</h3>
+          <address>No.16 Eberelinks Road, Ikeja,Lagos</address>
+
+          <h3>Mobile</h3>
+          <p>+337 5756 58696 33</p>
+
+          <h3>Email</h3>
+          <p>ajidelzeoluwafemo@gmail.com</p>
+        </div>
+      </div>
+      <hr />
+      <h5>
+        <i class="fa-regular fa-copyright"></i> 2015 Ineuron Technology Pvt. Ltd
+      </h5>
+    </footer>
+  </body>
+</html>

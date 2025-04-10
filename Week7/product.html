@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgb(253, 218, 224);
+    }
+
+    h1 {
+      text-align: center;
+      padding: 4rem;
+      font-size: 6rem;
+      font-weight: bolder;
+    }
+
+    .product-images {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .container_product {
+      display: grid;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .product-div {
+      text-align: center;
+      padding: 2rem;
+      background-color: white;
+      box-shadow: 3px 20px 20px rgb(141, 136, 136);
+    }
+    .product-name-price {
+      text-align: left;
+    }
+
+    .product-name-price h4 {
+      color: gold;
+      font-weight: bolder;
+      font-size: 1.3rem;
+    }
+
+    .product-name-price h2 {
+      margin-bottom: 1.5rem;
+      font-weight: bolder;
+      font-size: 3rem;
+    }
+
+    .product-writeUp-contn {
+      line-height: 1.5rem;
+      margin-top: 2rem;
+      text-align: left;
+    }
+
+    .product-tags {
+        font-size: 1.2rem;
+    }
+
+    .btn-div {
+      text-align: right;
+      
+    }
+
+    .buy-btn {
+      margin: 2rem 0 ;
+      padding: 0.8rem 3rem;
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      font-size: 1.5rem;
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (max-width: 991px) {
+      .product-div {
+        width: 32rem;
+        height: 34rem;
+      }
+
+      .container_product {
+        margin-bottom: 3rem;
+        gap: 5rem;
+        justify-content: center;
+      }
+    }
+
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      .procut-div {
+        width: 25rem;
+        height: 30rem;
+      }
+
+      .container_product {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+      .product-div {
+        width: 25rem;
+        height: 33rem;
+      }
+
+      .container_product {
+        grid-template-columns: 26% 22%;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .product-name-price {
+        display: flex;
+      }
+
+      .product-name-price h4 {
+       flex: 1;
+       text-align: right;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container-div">
+      <h1>Products</h1>
+      <div class="container_product">
+        <div class="product-div">
+          <img
+            src="images/ecom-images/earphone.png"
+            alt="bag"
+            class="product-images"
+          />
+          <div class="product-writeUp-contn">
+            <div class="product-name-price">
+              <h2>Earphone</h2>
+              <h4>$ 15.99</h4>
+            </div>
+            <p class="product-tags">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, dignissimos!
+            </p>
+            <div class="btn-div">
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <img
+            src="images/ecom-images/iphone2.png"
+            alt="bag"
+            class="product-images"
+          />
+          <div class="product-writeUp-contn">
+            <div class="product-name-price">
+              <h2>Iphone</h2>
+              <h4>$ 120.99</h4>
+            </div>
+            <p class="product-tags">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, dignissimos!
+            </p>
+            <div class="btn-div">
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <img
+            src="images/ecom-images/laptop.png"
+            alt="bag"
+            class="product-images"
+          />
+          <div class="product-writeUp-contn">
+            <div class="product-name-price">
+              <h2>Laptop</h2>
+              <h4>$ 15.99</h4>
+            </div>
+            <p class="product-tags">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, dignissimos!
+            </p>
+            <div class="btn-div">
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-div">
+          <img
+            src="images/ecom-images/watch3.png"
+            alt="bag"
+            class="product-images"
+          />
+          <div class="product-writeUp-contn">
+            <div class="product-name-price">
+              <h2>Watch</h2>
+              <h4>$ 15.99</h4>
+            </div>
+            <p class="product-tags">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Cupiditate, dignissimos!
+            </p>
+            <div class="btn-div">
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

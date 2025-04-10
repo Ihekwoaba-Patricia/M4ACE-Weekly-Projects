@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar sample</title>
+
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .navbar-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .nav ul {
+            display: flex;
+            gap: 2rem;
+            background-color: black;
+            padding: 1rem 3rem;
+            border-radius: 15px;
+            border: 0;
+            box-shadow: 0 0 0.4rem black;
+        }
+
+        .nav ul >li {
+            list-style-type:none ;
+        }
+
+        .nav ul li a {
+         text-decoration: none;
+         color: white;
+         font-weight: bold;
+        
+        }
+
+        .nav ul .team {
+            color: rgb(131, 241, 131);
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar-div">
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" class="team">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams</title>
+</head>
+
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(228, 230, 231);
+      }
+    h1 {
+        text-align: center;
+        padding: 4rem;
+        font-size: 3rem;
+        color:rgb(42, 124, 124);
+        font-weight: bolder;
+    }
+
+    .bag-images {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 60%;
+    }
+
+    .container_team {
+        display: grid;
+        margin-bottom: 2rem;
+      
+    }
+
+    h2 {
+        font-size: 2rem;
+        color:rgb(70, 147, 121);
+    }
+
+    .team-div {
+        text-align: center;
+         padding: 2rem;
+         background-color: white;
+         box-shadow: 3px 20px 20px rgb(141, 136, 136);
+    }
+
+    .team-writeUp-contn {
+        line-height: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .follow-btn {
+        margin-top: 2rem;
+        padding: 0.8rem 5rem;
+        background-color:rgb(47, 132, 104);
+        color: white;
+        border-radius: 10px;
+        font-size: 1.5rem;
+    }
+
+    .follow-btn:hover {
+        background-color: rgb(122, 219, 186);
+    }
+
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 991px) {
+    .team-div {
+       width: 30rem;
+       height: 30rem;
+       
+    }
+
+    .container_team {
+       margin-bottom: 3rem;
+       gap: 5rem;
+       justify-content: center;
+    }
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .team-div {
+       width: 25rem;
+       height: 30rem;
+       
+    }
+
+    .container_team {
+     grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .team-div {
+       width: 30rem;
+       height: 30rem;
+       
+    }
+
+    .container_team {
+     grid-template-columns: 32% 20%;
+    justify-content: center;
+        gap: 2rem;
+    }
+}
+</style>
+
+
+<body>
+    <div class="container-div">
+        <h1>MEET OUR TEAMS</h1>
+        <div class="container_team">
+          <div class="team-div">
+            <img src="images/assets/02.jpg" alt="bag" class="bag-images">
+            <div class="team-writeUp-contn">
+                <h2>Sunmetecha</h2>
+              <p class="bag-tags">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dignissimos!</p>
+              <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+  
+          <div class="team-div">
+            <img src="images/assets/04.jpg" alt="bag" class="bag-images">
+            <div class="team-writeUp-contn">
+                <h2>Sunmetecha</h2>
+                <p class="bag-tags">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dignissimos!</p>
+                <button class="follow-btn">Follow</button>
+            </div>
+          </div>
+  
+          <div class="team-div">
+            <img src="images/assets/05.jpg" alt="bag" class="bag-images">
+            <div class="team-writeUp-contn">
+                <h2>Sunmetecha</h2>
+                <p class="bag-tags">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dignissimos!</p>
+                <button class="follow-btn">Follow</button>
+            </div>
+          </div>
+  
+  
+          <div class="team-div">
+            <img src="images/assets/01.jpg" alt="bag" class="bag-images">
+            <div class="team-writeUp-contn">
+                <h2>Sunmetecha</h2>
+                <p class="bag-tags">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, dignissimos!</p>
+                <button class="follow-btn">Follow</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+</body>
+</html>

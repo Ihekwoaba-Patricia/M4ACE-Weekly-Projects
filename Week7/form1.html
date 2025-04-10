@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form Sample</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(26, 24, 24);
+        color: white;
+      }
+
+      .DivContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+      }
+      h1 {
+        margin-top: 2rem;
+      }
+
+      h1, h4 {
+       margin-left: 2rem;
+      }
+
+      .formContainer {
+        width: 20rem;
+        background-color: rgb(38, 38, 80);
+      }
+
+      .inputDiv {
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .inputDiv > input {
+        margin: 0.5rem 0 1rem 0;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: rgb(68, 68, 90);
+        border: 0;
+        width: 16rem;
+      }
+
+      ::placeholder {
+        color: whitesmoke;
+        font-weight: bolder;
+      }
+
+      .btn-div > input {
+        border-radius: 1rem;
+        background-color: rgba(97, 97, 251, 0.995);
+        padding: 1rem;
+        margin: 1rem 0 2rem 0;
+        text-align: center;
+        border: 0;
+        width: 16rem;
+      }
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {
+      
+      }
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="DivContainer">
+      <div class="formContainer">
+        <div text-div>
+          <h1>Welcome</h1>
+          <h4>Let's create your account</h4>
+        </div>
+
+        <form action="" class="form">
+          <div class="inputDiv">
+            <input type="text" name="firstname" placeholder="First name" />
+            <input type="text" name="lastname" placeholder="Last name" />
+            <input type="email" name="email" placeholder="E-mail" />
+
+            <div class="btn-div">
+              <input
+                type="text"
+                name="submit"
+                placeholder="Submit"
+                class="submit"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
